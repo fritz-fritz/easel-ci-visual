@@ -13,21 +13,21 @@
       Strict stages highlight content drift between runners; GUI smoke remains informational.</p>
     <div class="meta">
       <div class="meta-card"><span class="label">Pull request</span><span class="value">#13</span></div>
-      <div class="meta-card"><span class="label">Commit</span><span class="value" title="6989214340532b8a0900314ffe3147eb35fc7c9d">6989214</span></div>
-      <div class="meta-card"><span class="label">Workflow run</span><span class="value"><a href="https://github.com/fritz-fritz/Easel/actions/runs/29634209043">29634209043</a></span></div>
+      <div class="meta-card"><span class="label">Commit</span><span class="value" title="905e79050397fe6fc0c4381d3453833d9e3e13c2">905e790</span></div>
+      <div class="meta-card"><span class="label">Workflow run</span><span class="value"><a href="https://github.com/fritz-fritz/Easel/actions/runs/29636324284">29636324284</a></span></div>
       <div class="meta-card"><span class="label">Artifacts</span><span class="value">12 PNG · 3 OS</span></div>
       <div class="meta-card"><span class="label">OS coverage</span><span class="value">macos-latest, ubuntu-latest, windows-latest</span></div>
       <div class="meta-card"><span class="label">Gallery host</span><span class="value">https://fritz-fritz.github.io/easel-ci-visual</span></div>
     </div>
     <div class="summary-banner">
       <strong>OS compare</strong>
-      <span class="chip mismatch">apply-payload 1 OS regression(s)</span><span class="chip match">apply-payload 2/3 fully OS-identical</span><span class="chip info">gui/other: 0 platform variance / 3 assets</span>
+      <span class="chip match">apply-payload 3/3 byte-identical across OS</span><span class="chip info">gui/other: 0 platform variance / 3 assets</span>
     </div>
   </header>
   <main>
     <section>
   <h2>apply-payload</h2>
-  <p class="stage-note">Byte-identical rasters expected across OS — mismatches are regression signals.</p>
+  <p class="stage-note">Byte-identical rasters required across OS. Near-matches (±1 LSB) are shown for debugging but still fail the gate.</p>
   <div class="compare-wrap">
     <table class="compare">
 <thead><tr><th>Asset</th><th>macos-latest</th><th>ubuntu-latest</th><th>windows-latest</th></tr></thead>
@@ -59,42 +59,42 @@
       <img src="apply-payload-macos-latest-apply-display-1.png" alt="macos-latest · 1" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">480×270<br />d45693958093<br />15253 B</div>
+  <div class="cell-meta">480×270<br />bcd7b6120c77<br />11141 B</div>
 </td><td>
   <figure>
     <a href="apply-payload-ubuntu-latest-apply-display-1.png" data-lightbox data-caption="ubuntu-latest · 1">
       <img src="apply-payload-ubuntu-latest-apply-display-1.png" alt="ubuntu-latest · 1" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">480×270<br />d45693958093<br />15253 B</div>
+  <div class="cell-meta">480×270<br />bcd7b6120c77<br />11141 B</div>
 </td><td>
   <figure>
     <a href="apply-payload-windows-latest-apply-display-1.png" data-lightbox data-caption="windows-latest · 1">
       <img src="apply-payload-windows-latest-apply-display-1.png" alt="windows-latest · 1" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">480×270<br />d45693958093<br />15253 B</div>
-</td></tr><tr><td class="asset">2<div class="cell-meta"><span class="chip mismatch">content mismatch</span></div></td><td>
+  <div class="cell-meta">480×270<br />bcd7b6120c77<br />11141 B</div>
+</td></tr><tr><td class="asset">2<div class="cell-meta"><span class="chip match">identical across OS</span></div></td><td>
   <figure>
     <a href="apply-payload-macos-latest-apply-display-2.png" data-lightbox data-caption="macos-latest · 2">
       <img src="apply-payload-macos-latest-apply-display-2.png" alt="macos-latest · 2" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">240×135<br />f36e32a1b8d6<br />1274 B</div>
+  <div class="cell-meta">240×135<br />547f4bb0c015<br />1108 B</div>
 </td><td>
   <figure>
     <a href="apply-payload-ubuntu-latest-apply-display-2.png" data-lightbox data-caption="ubuntu-latest · 2">
       <img src="apply-payload-ubuntu-latest-apply-display-2.png" alt="ubuntu-latest · 2" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">240×135<br />f36e32a1b8d6<br />1274 B</div>
+  <div class="cell-meta">240×135<br />547f4bb0c015<br />1108 B</div>
 </td><td>
   <figure>
     <a href="apply-payload-windows-latest-apply-display-2.png" data-lightbox data-caption="windows-latest · 2">
       <img src="apply-payload-windows-latest-apply-display-2.png" alt="windows-latest · 2" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">240×135<br />8a1ab49d2185<br />1270 B</div>
+  <div class="cell-meta">240×135<br />547f4bb0c015<br />1108 B</div>
 </td></tr>
 </tbody>
 </table>
@@ -112,21 +112,21 @@
       <img src="gui-smoke-macos-latest.png" alt="macos-latest · gui-smoke-macos-latest" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">765×330<br />bdaf688936a0<br />30469 B</div>
+  <div class="cell-meta">765×330<br />210ba2cb580d<br />30296 B</div>
 </td><td><div class="missing">missing</div></td><td><div class="missing">missing</div></td></tr><tr><td class="asset">gui-smoke-ubuntu-latest<div class="cell-meta"><span class="chip warn">single OS only</span></div></td><td><div class="missing">missing</div></td><td>
   <figure>
     <a href="gui-smoke-ubuntu-latest.png" data-lightbox data-caption="ubuntu-latest · gui-smoke-ubuntu-latest">
       <img src="gui-smoke-ubuntu-latest.png" alt="ubuntu-latest · gui-smoke-ubuntu-latest" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">900×330<br />773311b8d349<br />32722 B</div>
+  <div class="cell-meta">900×330<br />ccc3bb0b99bc<br />32501 B</div>
 </td><td><div class="missing">missing</div></td></tr><tr><td class="asset">gui-smoke-windows-latest<div class="cell-meta"><span class="chip warn">single OS only</span></div></td><td><div class="missing">missing</div></td><td><div class="missing">missing</div></td><td>
   <figure>
     <a href="gui-smoke-windows-latest.png" data-lightbox data-caption="windows-latest · gui-smoke-windows-latest">
       <img src="gui-smoke-windows-latest.png" alt="windows-latest · gui-smoke-windows-latest" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">769×330<br />eb1d36ba63b8<br />24106 B</div>
+  <div class="cell-meta">769×330<br />5f310521e927<br />23963 B</div>
 </td></tr>
 </tbody>
 </table>
