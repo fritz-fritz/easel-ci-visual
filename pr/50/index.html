@@ -13,15 +13,15 @@
       Strict stages highlight content drift between runners; GUI smoke remains informational.</p>
     <div class="meta">
       <div class="meta-card"><span class="label">Pull request</span><span class="value">#50</span></div>
-      <div class="meta-card"><span class="label">Commit</span><span class="value" title="a70fab1b18bebf18e44f7f6896b851cd5785c537">a70fab1</span></div>
-      <div class="meta-card"><span class="label">Workflow run</span><span class="value"><a href="https://github.com/fritz-fritz/Easel/actions/runs/31246559593">31246559593</a></span></div>
-      <div class="meta-card"><span class="label">Artifacts</span><span class="value">15 PNG · 3 OS</span></div>
+      <div class="meta-card"><span class="label">Commit</span><span class="value" title="e5640583b541067c08996162a1abc5a06de4d413">e564058</span></div>
+      <div class="meta-card"><span class="label">Workflow run</span><span class="value"><a href="https://github.com/fritz-fritz/Easel/actions/runs/31247070001">31247070001</a></span></div>
+      <div class="meta-card"><span class="label">Artifacts</span><span class="value">27 PNG · 3 OS</span></div>
       <div class="meta-card"><span class="label">OS coverage</span><span class="value">macos-latest, ubuntu-latest, windows-latest</span></div>
       <div class="meta-card"><span class="label">Gallery host</span><span class="value">https://fritz-fritz.github.io/easel-ci-visual</span></div>
     </div>
     <div class="summary-banner">
       <strong>OS compare</strong>
-      <span class="chip match">apply-payload 3/3 byte-identical across OS</span><span class="chip info">gui/other: 0 platform variance / 6 assets</span>
+      <span class="chip match">apply-payload 3/3 byte-identical across OS</span><span class="chip info">gui/other: 6 platform variance / 6 assets</span>
     </div>
   </header>
   <main>
@@ -104,50 +104,134 @@
   <p class="stage-note">Rows are smoke views (fixture preview + full-window pages). Platform chrome differs by OS; variance here is informational, not a gate.</p>
   <div class="compare-wrap">
     <table class="compare">
-<thead><tr><th>Asset</th><th>ubuntu-latest</th></tr></thead>
+<thead><tr><th>Asset</th><th>macos-latest</th><th>ubuntu-latest</th><th>windows-latest</th></tr></thead>
 <tbody>
-<tr><td class="asset">preview<div class="cell-meta"><span class="chip warn">single OS only</span></div></td><td>
+<tr><td class="asset">preview<div class="cell-meta"><span class="chip info">platform variance</span></div></td><td>
+  <figure>
+    <a href="gui-smoke-macos-latest-gui-preview.png" data-lightbox data-caption="macos-latest · preview">
+      <img src="gui-smoke-macos-latest-gui-preview.png" alt="macos-latest · preview" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">900×330<br />c3dc3da23c15<br />34465 B</div>
+</td><td>
   <figure>
     <a href="gui-smoke-ubuntu-latest-gui-preview.png" data-lightbox data-caption="ubuntu-latest · preview">
       <img src="gui-smoke-ubuntu-latest-gui-preview.png" alt="ubuntu-latest · preview" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">900×330<br />6c2f71617698<br />32503 B</div>
-</td></tr><tr><td class="asset">compose<div class="cell-meta"><span class="chip warn">single OS only</span></div></td><td>
+  <div class="cell-meta">900×330<br />803fc763d707<br />32503 B</div>
+</td><td>
+  <figure>
+    <a href="gui-smoke-windows-latest-gui-preview.png" data-lightbox data-caption="windows-latest · preview">
+      <img src="gui-smoke-windows-latest-gui-preview.png" alt="windows-latest · preview" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">900×330<br />f28a50833967<br />31261 B</div>
+</td></tr><tr><td class="asset">compose<div class="cell-meta"><span class="chip info">platform variance</span></div></td><td>
+  <figure>
+    <a href="gui-smoke-macos-latest-gui-compose.png" data-lightbox data-caption="macos-latest · compose">
+      <img src="gui-smoke-macos-latest-gui-compose.png" alt="macos-latest · compose" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />2cfffe39da06<br />128804 B</div>
+</td><td>
   <figure>
     <a href="gui-smoke-ubuntu-latest-gui-compose.png" data-lightbox data-caption="ubuntu-latest · compose">
       <img src="gui-smoke-ubuntu-latest-gui-compose.png" alt="ubuntu-latest · compose" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">1220×780<br />768013a5aace<br />113628 B</div>
-</td></tr><tr><td class="asset">discover<div class="cell-meta"><span class="chip warn">single OS only</span></div></td><td>
+  <div class="cell-meta">1220×780<br />916276dd247a<br />113618 B</div>
+</td><td>
+  <figure>
+    <a href="gui-smoke-windows-latest-gui-compose.png" data-lightbox data-caption="windows-latest · compose">
+      <img src="gui-smoke-windows-latest-gui-compose.png" alt="windows-latest · compose" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />7bb49e702419<br />115470 B</div>
+</td></tr><tr><td class="asset">discover<div class="cell-meta"><span class="chip info">platform variance</span></div></td><td>
+  <figure>
+    <a href="gui-smoke-macos-latest-gui-discover.png" data-lightbox data-caption="macos-latest · discover">
+      <img src="gui-smoke-macos-latest-gui-discover.png" alt="macos-latest · discover" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />2ab3fd6a3689<br />87253 B</div>
+</td><td>
   <figure>
     <a href="gui-smoke-ubuntu-latest-gui-discover.png" data-lightbox data-caption="ubuntu-latest · discover">
       <img src="gui-smoke-ubuntu-latest-gui-discover.png" alt="ubuntu-latest · discover" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">1220×780<br />ae545dcb43cf<br />66679 B</div>
-</td></tr><tr><td class="asset">library<div class="cell-meta"><span class="chip warn">single OS only</span></div></td><td>
+  <div class="cell-meta">1220×780<br />64733dcd4106<br />66660 B</div>
+</td><td>
+  <figure>
+    <a href="gui-smoke-windows-latest-gui-discover.png" data-lightbox data-caption="windows-latest · discover">
+      <img src="gui-smoke-windows-latest-gui-discover.png" alt="windows-latest · discover" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />e5279fac3ba7<br />71909 B</div>
+</td></tr><tr><td class="asset">library<div class="cell-meta"><span class="chip info">platform variance</span></div></td><td>
+  <figure>
+    <a href="gui-smoke-macos-latest-gui-library.png" data-lightbox data-caption="macos-latest · library">
+      <img src="gui-smoke-macos-latest-gui-library.png" alt="macos-latest · library" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />eeca2a1b541c<br />66723 B</div>
+</td><td>
   <figure>
     <a href="gui-smoke-ubuntu-latest-gui-library.png" data-lightbox data-caption="ubuntu-latest · library">
       <img src="gui-smoke-ubuntu-latest-gui-library.png" alt="ubuntu-latest · library" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">1220×780<br />e7b9ce78edd6<br />51197 B</div>
-</td></tr><tr><td class="asset">profiles<div class="cell-meta"><span class="chip warn">single OS only</span></div></td><td>
+  <div class="cell-meta">1220×780<br />25544dae637c<br />51197 B</div>
+</td><td>
+  <figure>
+    <a href="gui-smoke-windows-latest-gui-library.png" data-lightbox data-caption="windows-latest · library">
+      <img src="gui-smoke-windows-latest-gui-library.png" alt="windows-latest · library" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />d5d3b4d8e226<br />53253 B</div>
+</td></tr><tr><td class="asset">profiles<div class="cell-meta"><span class="chip info">platform variance</span></div></td><td>
+  <figure>
+    <a href="gui-smoke-macos-latest-gui-profiles.png" data-lightbox data-caption="macos-latest · profiles">
+      <img src="gui-smoke-macos-latest-gui-profiles.png" alt="macos-latest · profiles" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />971211fbe351<br />66390 B</div>
+</td><td>
   <figure>
     <a href="gui-smoke-ubuntu-latest-gui-profiles.png" data-lightbox data-caption="ubuntu-latest · profiles">
       <img src="gui-smoke-ubuntu-latest-gui-profiles.png" alt="ubuntu-latest · profiles" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">1220×780<br />7ddb24722019<br />51308 B</div>
-</td></tr><tr><td class="asset">automation<div class="cell-meta"><span class="chip warn">single OS only</span></div></td><td>
+  <div class="cell-meta">1220×780<br />1db5101358d1<br />51311 B</div>
+</td><td>
+  <figure>
+    <a href="gui-smoke-windows-latest-gui-profiles.png" data-lightbox data-caption="windows-latest · profiles">
+      <img src="gui-smoke-windows-latest-gui-profiles.png" alt="windows-latest · profiles" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />38624575bf98<br />53643 B</div>
+</td></tr><tr><td class="asset">automation<div class="cell-meta"><span class="chip info">platform variance</span></div></td><td>
+  <figure>
+    <a href="gui-smoke-macos-latest-gui-automation.png" data-lightbox data-caption="macos-latest · automation">
+      <img src="gui-smoke-macos-latest-gui-automation.png" alt="macos-latest · automation" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />73888a6a8c39<br />86113 B</div>
+</td><td>
   <figure>
     <a href="gui-smoke-ubuntu-latest-gui-automation.png" data-lightbox data-caption="ubuntu-latest · automation">
       <img src="gui-smoke-ubuntu-latest-gui-automation.png" alt="ubuntu-latest · automation" loading="lazy" />
     </a>
   </figure>
-  <div class="cell-meta">1220×780<br />2cc2954b5460<br />66625 B</div>
+  <div class="cell-meta">1220×780<br />67c0c4ae5a91<br />66624 B</div>
+</td><td>
+  <figure>
+    <a href="gui-smoke-windows-latest-gui-automation.png" data-lightbox data-caption="windows-latest · automation">
+      <img src="gui-smoke-windows-latest-gui-automation.png" alt="windows-latest · automation" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">1220×780<br />021af7ca9a09<br />71045 B</div>
 </td></tr>
 </tbody>
 </table>
