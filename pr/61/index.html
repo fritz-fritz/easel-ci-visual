@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Easel visual harness · PR #61</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Easel visual harness</h1>
+    <p class="lede">Cross-OS artifact review for pull request #61.
+      Strict stages highlight content drift between runners; GUI smoke remains informational.</p>
+    <div class="meta">
+      <div class="meta-card"><span class="label">Pull request</span><span class="value">#61</span></div>
+      <div class="meta-card"><span class="label">Commit</span><span class="value" title="ef509863526d538725c88db71bae9210c5b692b3">ef50986</span></div>
+      <div class="meta-card"><span class="label">Workflow run</span><span class="value"><a href="https://github.com/fritz-fritz/Easel/actions/runs/32917001312">32917001312</a></span></div>
+      <div class="meta-card"><span class="label">Artifacts</span><span class="value">6 PNG · 2 OS</span></div>
+      <div class="meta-card"><span class="label">OS coverage</span><span class="value">macos-latest, windows-latest</span></div>
+      <div class="meta-card"><span class="label">Gallery host</span><span class="value">https://fritz-fritz.github.io/easel-ci-visual</span></div>
+    </div>
+    <div class="summary-banner">
+      <strong>OS compare</strong>
+      <span class="chip warn">3 incomplete matrix</span>
+    </div>
+  </header>
+  <main>
+    <section>
+  <h2>apply-payload</h2>
+  <p class="stage-note">Byte-identical rasters required across OS. Near-matches (±1 LSB) are shown for debugging but still fail the gate.</p>
+  <div class="compare-wrap">
+    <table class="compare">
+<thead><tr><th>Asset</th><th>macos-latest</th><th>windows-latest</th></tr></thead>
+<tbody>
+<tr><td class="asset">0<div class="cell-meta"><span class="chip warn">identical (matrix incomplete)</span></div></td><td>
+  <figure>
+    <a href="apply-payload-macos-latest-apply-display-0.png" data-lightbox data-caption="macos-latest · 0">
+      <img src="apply-payload-macos-latest-apply-display-0.png" alt="macos-latest · 0" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">320×180<br />63faf9784358<br />1705 B</div>
+</td><td>
+  <figure>
+    <a href="apply-payload-windows-latest-apply-display-0.png" data-lightbox data-caption="windows-latest · 0">
+      <img src="apply-payload-windows-latest-apply-display-0.png" alt="windows-latest · 0" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">320×180<br />63faf9784358<br />1705 B</div>
+</td></tr><tr><td class="asset">1<div class="cell-meta"><span class="chip warn">identical (matrix incomplete)</span></div></td><td>
+  <figure>
+    <a href="apply-payload-macos-latest-apply-display-1.png" data-lightbox data-caption="macos-latest · 1">
+      <img src="apply-payload-macos-latest-apply-display-1.png" alt="macos-latest · 1" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">480×270<br />bcd7b6120c77<br />11141 B</div>
+</td><td>
+  <figure>
+    <a href="apply-payload-windows-latest-apply-display-1.png" data-lightbox data-caption="windows-latest · 1">
+      <img src="apply-payload-windows-latest-apply-display-1.png" alt="windows-latest · 1" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">480×270<br />bcd7b6120c77<br />11141 B</div>
+</td></tr><tr><td class="asset">2<div class="cell-meta"><span class="chip warn">identical (matrix incomplete)</span></div></td><td>
+  <figure>
+    <a href="apply-payload-macos-latest-apply-display-2.png" data-lightbox data-caption="macos-latest · 2">
+      <img src="apply-payload-macos-latest-apply-display-2.png" alt="macos-latest · 2" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">240×135<br />547f4bb0c015<br />1108 B</div>
+</td><td>
+  <figure>
+    <a href="apply-payload-windows-latest-apply-display-2.png" data-lightbox data-caption="windows-latest · 2">
+      <img src="apply-payload-windows-latest-apply-display-2.png" alt="windows-latest · 2" loading="lazy" />
+    </a>
+  </figure>
+  <div class="cell-meta">240×135<br />547f4bb0c015<br />1108 B</div>
+</td></tr>
+</tbody>
+</table>
+  </div>
+</section>
+  </main>
+  <dialog id="lightbox">
+    <form method="dialog"><button value="close">Close</button></form>
+    <img alt="" />
+  </dialog>
+  <script src="gallery.js"></script>
+</body>
+</html>
